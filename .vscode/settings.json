@@ -9,5 +9,4 @@
     ],
     "editor.formatOnSave": true
   },
-  "dart.flutterSdkPath": ".fvm/versions/stable"
 }
