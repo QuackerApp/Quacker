@@ -186,7 +186,7 @@ class TweetCard extends StatelessWidget {
             BoxFit.contain);
         return _createWebsiteCard(context, unifiedCard, uri, imageSize, child);
       case 'video_website':
-        // https://twitter.com/yenisafak/status/1560244349451096064
+        // https://x.com/yenisafak/status/1560244349451096064
         var media = unifiedCard['media_entities'][unifiedCard['component_objects']['media_1']['data']['id']];
         var uri = unifiedCard['destination_objects']['browser_with_docked_media_1']['data']['url_data']['url'];
 
@@ -334,7 +334,7 @@ class TweetCard extends StatelessWidget {
       case 'poll4choice_text_only':
         return _createVoteCard(context, card, 4);
       case 'promo_website':
-        // https://twitter.com/CMEGroup/status/1573288572647612416
+        // https://x.com/CMEGroup/status/1573288572647612416
         var url = card['binding_values']['website_url']['string_value'];
         var image = card['binding_values']['promo_image$imageKey']?['image_value'];
         var title = card['binding_values']['title']['string_value'];
@@ -362,7 +362,7 @@ class TweetCard extends StatelessWidget {
           return Container();
         }
       case '745291183405076480:live_event':
-        // https://twitter.com/Erdoanz11/status/1573765738032152577
+        // https://x.com/Erdoanz11/status/1573765738032152577
         var url = card['binding_values']['card_url']['string_value'];
         var image = card['binding_values']['event_thumbnail$imageKey']?['image_value'];
 
@@ -386,7 +386,7 @@ class TweetCard extends StatelessWidget {
             ),
             context);
       case '745291183405076480:broadcast':
-        // https://twitter.com/KwasiKwarteng/status/1573229010779516929
+        // https://x.com/KwasiKwarteng/status/1573229010779516929
         var uri = card['binding_values']['card_url']['string_value'];
         var image = card['binding_values']['broadcast_thumbnail$imageKey']?['image_value']['url'];
         var key = card['binding_values']['broadcast_media_key']['string_value'];

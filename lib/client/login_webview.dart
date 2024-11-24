@@ -21,11 +21,11 @@ class _TwitterLoginWebviewState extends State<TwitterLoginWebview> {
     final webviewCookieManager = WebviewCookieManager();
     final webviewController = WebViewController();
     webviewController.setJavaScriptMode(JavaScriptMode.unrestricted);
-    webviewController.loadRequest(Uri.https("twitter.com", "i/flow/login"));
+    webviewController.loadRequest(Uri.https("x.com", "i/flow/login"));
     webviewController.setNavigationDelegate(NavigationDelegate(
       onUrlChange: (change) async {
-        if (change.url == "https://twitter.com/home") {
-          final cookies = await webviewCookieManager.getCookies("https://twitter.com/i/flow/login");
+        if (change.url == "https://x.com/home") {
+          final cookies = await webviewCookieManager.getCookies("https://x.com/i/flow/login");
 
           try {
             final expCt0 = RegExp(r'(ct0=(.+?));');
