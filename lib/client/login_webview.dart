@@ -21,11 +21,10 @@ class _TwitterLoginWebviewState extends State<TwitterLoginWebview> {
     final webviewCookieManager = WebviewCookieManager();
     final webviewController = WebViewController();
     webviewController.setJavaScriptMode(JavaScriptMode.unrestricted);
-    webviewController.loadRequest(Uri.https("twitter.com", "i/flow/login"));
-    webviewController.setNavigationDelegate(NavigationDelegate(
-      onUrlChange: (change) async {
-        if (change.url == "https://twitter.com/home") {
-          final cookies = await webviewCookieManager.getCookies("https://twitter.com/i/flow/login");
+    webviewController.loadRequest(Uri.https("x.com", "i/flow/login"));
+
+    getCookies() {
+      final cookies = await webviewCookieManager.getCookies("https://x.com/i/flow/login");
 
           try {
             final expCt0 = RegExp(r'(ct0=(.+?));');
@@ -46,8 +45,6 @@ class _TwitterLoginWebviewState extends State<TwitterLoginWebview> {
                 "x-csrf-token": csrfToken,
               };
 
-              print(authHeader);
-
               final database = await Repository.writable();
               database.insert(tableAccounts, Account(id: csrfToken, authHeader: json.encode(authHeader)).toMap());
               database.close();
@@ -56,12 +53,25 @@ class _TwitterLoginWebviewState extends State<TwitterLoginWebview> {
           } catch (e) {
             throw Exception(e);
           }
+    }
+
+    webviewController.setNavigationDelegate(NavigationDelegate(
+      onUrlChange: (change) async {
+        if (change.url == "https://x.com/home") {
+          getCookies();
         }
       },
     ));
     return Scaffold(
       appBar: AppBar(
-        toolbarHeight: 50,
+        actions: [
+          IconButton(
+            icon: Icon(const Icons.account_circle),
+            onPressed: () {
+              getCookies();
+            }
+          )
+        ]
       ),
       body: WebViewWidget(
         controller: webviewController,
