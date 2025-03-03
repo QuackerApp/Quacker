@@ -1,0 +1,17 @@
+## Major changes
+* Trending page has been merged with search
+* Subscriptions page has received a much needed makeover
+* Settings follow the Material 3 design language
+* You can now edit your account details
+
+## Minor changes
+* Feed has been renamed to Home
+* You can now go to a profile directly by just typing @ + the username into search
+* Navigation bar icons also follow Material 3 design language
+* When navigation labels are disabled the navigation bar size is reduced (#14)
+* Navigation bar now follows True Black (#15)
+* Group cards have been shrunk
+* Import dialog has been replaced by an import screen (should fix #19)
+* Nicer errors
+
+**Full Changelog**: https://github.com/TheHCJ/Quacker/compare/v3.4.0...v3.4.1

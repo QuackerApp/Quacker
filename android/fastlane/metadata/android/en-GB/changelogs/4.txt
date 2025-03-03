@@ -1,0 +1,6 @@
+• Added: Open in browser to tweets
+• Added: App to be the default to open `t.co` and `nitter.cz`
+• Fix: Deleted tweet comments still appearing
+• Fix: Verified checkmarks in feed
+• UI: `Group:` prefix
+• Change: Rebranded iOS Icons

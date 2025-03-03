@@ -1,0 +1,9 @@
+## v3.2.0
+* Added: Unified Feeds (`For-you` and `Following` are unified)
+* Added: Upgraded NavigationBar
+* Added: Upgraded `Settings` screen
+* Added: `x.com` to list of urls that will get opened in `Quacker`
+<br></br>
+* Changed: Anomynised parts of the app
+<br></br>
+* Fixed: Camera Permission shown when it shouldn't

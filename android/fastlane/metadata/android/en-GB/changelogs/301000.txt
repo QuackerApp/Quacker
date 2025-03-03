@@ -1,0 +1,8 @@
+## What's Changed
+* Added login to settings (thx @david-vodus)
+* True dark applies to Tweet Cards ([#129](https://github.com/j-fbriere/squawker/issues/129))
+* Dynamic Color ([#145](https://github.com/j-fbriere/squawker/issues/145))
+* Material You
+* For-you page
+
+**You may need to reinstall Quacker as it is using the old keystore**

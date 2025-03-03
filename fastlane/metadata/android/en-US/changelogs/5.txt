@@ -1,0 +1,5 @@
+• Fix: Translations
+• Changed: Now using outlined icons
+• UX: Navigation labels are hidden when inactive
+• UI: Bye Material 2
+• Removed: Android versions lower than 5.0

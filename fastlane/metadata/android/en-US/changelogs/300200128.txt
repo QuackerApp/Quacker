@@ -1,0 +1,10 @@
+## Major Changes
+- Use Twitter/X website for login (#9)
+- Option to disable black tweet cards
+- Verified orgs now show a checkmark
+
+## Minor Changes
+- Harmonised theme colors
+- Added refresh button to `For You` feed
+- Quoted card now had a proper outline
+- Nicer feed selector dropdown

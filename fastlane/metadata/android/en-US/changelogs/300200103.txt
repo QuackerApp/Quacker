@@ -1,0 +1,13 @@
+This is a big release with some major changes like color themes and the ability to add multiple accounts. This does mean your existing account will be removed and you will have to login again to continue to get updated feeds.
+
+## Additions:
+* Color themes (Red, Orange, Yellow, Green, Blue and Indigo)
+* Ability to add multiple accounts
+* Anonymous browsing (like the Twitter web interface)
+* Using icons on the search screen
+* Buttons over time bar (#12)
+* You should receive less errors relating to null safety
+
+## Regressions
+* Less posts are loaded into the feed (less likely to hit rate limits)
+* You have to log into your accounts again

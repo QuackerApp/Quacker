@@ -1,0 +1,12 @@
+## v3.2.1
+* Added: Ability to `Show navigation labels`
+* Added: Go to top button on Unified feeds
+<br></br>
+* Changed: Added login button to the login flow
+* Changed: Replaced Twitter with X
+* Changed: Showing navigation labels by default
+<br></br>
+* Fixed: Errors should show a proper reason
+* Fixed: For-you feed is visible when Following feed is selected
+* Fixed: Visual issue with NavigationBar on first launch
+* Fixed: Diff version codes per abi

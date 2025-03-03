@@ -1,0 +1,5 @@
+• Fix: feed
+• Fix: crashing
+• Fix: Tweet detail page
+• Improvement: Movable to SD-Card
+• Removed: True Dark
